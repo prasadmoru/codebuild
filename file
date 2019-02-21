@@ -1,0 +1,21 @@
+#!/bin/bash
+yum update -y
+service httpd start
+chkconfig httpd on
+
+echo "<html>
+            <body>
+                  <h1>Welcomet to AWS_DEVOPS </h1>
+    
+          </body>
+   
+   </html>"
+
+
+/usr/share/httpd/noindex/index.html
+
+
+
+
+
+# Install FUSE Packages yum -y install automake fuse fuse-devel gcc-c++ git libcurl-devel libxml2-devel make openssl-devel git clone https://github.com/s3fs-fuse/s3fs-fus... cd s3fs-fuse ./autogen.sh ./configure make make install
